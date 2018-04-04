@@ -2,7 +2,6 @@ require("dotenv").config();
 var keys = require("./keys.js")
 
 // console.log(keys);
-// var Spotify = require('spotify');
 
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
@@ -51,7 +50,6 @@ var spotifySearch = function (songInput) {
             return console.log('Error occurred: ' + err);
         }
 
-        // console.log(data.tracks.items[0]);
         var songs = data.tracks.items;
         for (i = 0; i < songs.length; i++) {
             console.log(i);
